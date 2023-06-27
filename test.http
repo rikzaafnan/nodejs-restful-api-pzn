@@ -1,0 +1,33 @@
+POST http://localhost:3000/api/users
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username":"rick1",
+    "password":"password",
+    "name":"rick name"
+}
+
+###
+
+POST http://localhost:3000/api/users
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username":"rick222",
+    "password":"password",
+    "name":"rick name"
+}
+
+
+### login
+
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username":"rick",
+    "password":"password"
+}

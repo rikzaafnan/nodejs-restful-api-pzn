@@ -1,8 +1,10 @@
 import express from "express";
 import userController from "../controller/user-controller.js";
 import { authMiddleware } from "../middleware/auth-middleware.js";
+import { loggingMiddleware } from "../middleware/logging-middleware.js";
 
 const userRouter = new express.Router();
+userRouter.use(loggingMiddleware)
 userRouter.use(authMiddleware)
 userRouter.get('/api/users/current', userController.get);
 userRouter.patch('/api/users/current', userController.update);
