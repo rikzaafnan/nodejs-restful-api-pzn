@@ -1,5 +1,5 @@
 import { request } from "express";
-import contactService from "../service/contact-service";
+import contactService from "../service/contact-service.js";
 
 const  create = async (req, res, next) => {
     try {

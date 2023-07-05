@@ -31,3 +31,19 @@ Accept: application/json
     "username":"rick",
     "password":"password"
 }
+
+
+### Create Address
+
+POST http://localhost:3000/api/contacts/316/addresses
+Content-Type: application/json
+Accept: application/json
+Authorization: 19dfc22d-4545-45a9-9b36-ec0fc3fee291
+
+{
+  "street" : "Kantor",
+  "city" : "Jakarta",
+  "province" : "DKI JAKARTA",
+  "country" : "Indonesia",
+  "postal_code" : "324234"
+}

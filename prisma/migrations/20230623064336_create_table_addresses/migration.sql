@@ -2,10 +2,10 @@
 CREATE TABLE `addresses` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
     `street` VARCHAR(255) NULL,
-    `City` VARCHAR(100) NULL,
+    `city` VARCHAR(100) NULL,
     `province` VARCHAR(100) NULL,
     `country` VARCHAR(100) NOT NULL,
-    `post_code` VARCHAR(10) NOT NULL,
+    `postal_code` VARCHAR(10) NOT NULL,
     `contact_id` INTEGER NOT NULL,
 
     PRIMARY KEY (`id`)
